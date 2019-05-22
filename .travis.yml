@@ -1,11 +1,14 @@
 language: node_js
+node_js:
+- 11.15.0
+before_install:
 addons:
         apt:
                 packages:
                 - sshpass
 node_js: stable
 script:
-- npm install .
+- npm install
 - npm run build
 after_success:
 - sshpass -p $DEPLOY_PASS scp -o stricthostkeychecking=no -r dist root@144.202.34.193:/home/www/homepage/

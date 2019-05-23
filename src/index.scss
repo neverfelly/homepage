@@ -2,38 +2,48 @@
 @import "~unsemantic/assets/sass/unsemantic-grid-responsive.scss";
 
 @import "stylesheets/chem-elements.scss";
-@import "stylesheets/footer.scss";
 @import "stylesheets/header.scss";
 @import "stylesheets/identities.scss";
-@import "stylesheets/intro.scss";
-@import "stylesheets/labels.scss";
+
 
 body {
-    background: url('./assets/images/header-background.svg') #466685;
-    background-size: cover;
-
     font-size: 1em;
     margin: 0;
-    min-height: 100vh;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 html {
+    background: url('./assets/images/nat-pants.png');
     font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-#container {
-    background-position: center;
-    box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
+.copyright {
+    background: #386668;
+    color: #eee;
+    font-size: 0.9em;
+    line-height: 2em;
+    padding: 0.5em 1em;
+}
+
+.header .greeting .chem-element {
+    text-decoration: none;
+}
+
+.acknowledgement {
+    background: #006080;
+    color: #eee;
+    font-size: 0.9em;
+    font-weight: normal;
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+.acknowledgement .link {
+    color: #006080;
+}
+
+.main-container {
     margin: 0 auto;
-    margin-bottom: 1em;
-    margin-top: -1em;
     max-width: 64em;
 }
 
@@ -41,20 +51,7 @@ html {
     display: inline-block;
 }
 
-$section-border-radius: 2em;
-
-#container, #container>*:first-child {
-    border-top-left-radius: $section-border-radius;
-}
-
-#container, #container>*:last-child, #container>*:last-child>*:last-child {
-    border-bottom-right-radius: $section-border-radius;
-}
-
-.header .small-labels .group::before, .header .small-labels .label::before {
-    color: #eee;
-}
-
-.identities .small-labels .group::before, .identities .small-labels .label::before {
-    color: #333;
+.section {
+    box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
+    margin: 1em 0;
 }

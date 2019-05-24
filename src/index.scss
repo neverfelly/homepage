@@ -4,7 +4,7 @@
 @import "stylesheets/chem-elements.scss";
 @import "stylesheets/header.scss";
 @import "stylesheets/identities.scss";
-
+@import "stylesheets/footer.scss";
 
 body {
     font-size: 1em;
@@ -16,31 +16,10 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
 }
 
-.copyright {
-    background: #386668;
-    color: #eee;
-    font-size: 0.9em;
-    line-height: 2em;
-    padding: 0.5em 1em;
-}
-
 .header .greeting .chem-element {
     text-decoration: none;
 }
 
-.acknowledgement {
-    background: #006080;
-    color: #eee;
-    font-size: 0.9em;
-    font-weight: normal;
-    display: block;
-    padding: 0.75em 1em;
-    text-decoration: none;
-}
-
-.acknowledgement .link {
-    color: #006080;
-}
 
 .main-container {
     margin: 0 auto;
@@ -55,3 +34,4 @@ html {
     box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
     margin: 1em 0;
 }
+

@@ -3,9 +3,23 @@
     width: 1.25em;
 }
 
+.acknowledgement {
+    background: #006080;
+    color: #eee;
+    font-size: 0.9em;
+    font-weight: normal;
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+.acknowledgement .link {
+    color: #00bfff;
+}
+
 .copyright {
-    background: #354c64;
-    color: #aaa;
+    background: #365c85;
+    color: rgb(255, 255, 255);
     font-size: 0.9em;
     line-height: 2em;
     padding: 0.5em 1em;
